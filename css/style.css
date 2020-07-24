@@ -6,7 +6,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
 html,body{
     
 	height: 100%;
@@ -16,18 +15,17 @@ html,body{
 
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1000px;
+	max-width: 1100px;
 }
 
 .clear{
 	clear: both;
 }
 
-
 header{
 	width: 100%;
 	padding: 20px 2%;
-	background-color: rgb(181, 171, 118);
+	
 }
 
 header .logo{
@@ -43,7 +41,6 @@ header .menu-desktop{
 	line-height: 70px;
 }
 
-
 header .menu-desktop ul li {
 	display: inline-block;
 	margin-left: 30px;
@@ -55,7 +52,6 @@ header .menu-mobile{
 	display: none;
 	float: none;
 }
-
 
 header .menu-mobile ul li {
 	display: block;
@@ -71,10 +67,145 @@ header .menu-mobile ul li:nth-of-type(1){
 	border-top: 1px solid rgba(0, 0, 0, 0.3); 
 }
 
+/*SLIDER */
 
 
+.slider{
+	/* background-color: black; */
+	/*O segredo */
+	/*Colocar a posição relativa, altura e largura em 100% sendo limitados */
+	position: relative;
+	width: 100%;
+	max-width: 1100px;
+	height: 100%;
+	max-height:500px;
+	/**/
+	margin: 0 auto;
+}
 
-@media screen and (max-width: 680px){
+/*Imagem totalmente responsiva */
+
+.slider img{
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+
+	display: none; /*Colocar o display oculto */
+	/*Centralize ao meio */
+	position: absolute;
+	left: 50%; 
+	top: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	/***/ 
+	/*Para cobrir 100% do slide*/
+	max-width: 100%;
+	max-height: 100%;
+	/***/
+}
+
+.bullets-nav{
+
+	/*Posição absoluta para manipular a posição*/
+	position: absolute;
+	left: 50%;
+	bottom:10px;
+	transform:translateX(-50%);
+	-ms-transform:translateX(-50%); /*Para prestar no explorer*/
+	/***/
+
+	width: 100%; /*Terá largura máxima*/
+	z-index: 3; /*Vai sobrepor tudo*/
+	text-align: center; /*Será Alinhado ao centro*/
+}
+
+.bullets-nav span{
+	/*Altura e largura fixa*/
+	width: 16px;
+	height: 16px;
+	/**/
+	display: inline-block; /*Se quebrara em linha*/
+	border-radius: 8px; /*Redondos*/
+	background-color: #ccc;
+	cursor: pointer; 
+	margin:0 20px;
+}
+
+/*3 COLUNAS */
+
+.section-columns{
+	width: 100%; 
+	height: auto;
+	padding-bottom: 50px;
+	color: rgb(82, 94, 85);
+}
+
+/*Alterar o container para ficar maior */
+.section-columns .container{
+
+/*O SEGREDO É ESSE */
+    text-align: center;  /*Colocar no pai para alinhar TODOS*/
+	max-width: 1250px;
+
+}
+
+/*ARRUMA O TÍTULO */
+.section-columns .title{
+	padding: 80px 0 30px 0;
+	font-weight: normal;
+	color:rgb(82, 94, 85);
+
+}
+
+/*Coluna*/
+.wraper{
+	width: 33.333%; /*Cada coluna */
+	max-width: 350px; /*Cada um se limita a */
+	height: 200px; /*Altura fixa */
+	margin:  30px; /*Margin entre eles */
+	display: inline-block; /*Alinha os display EM LINHA */
+}
+
+/*Arruma o icone*/
+.wraper .icon{
+	margin: 0 auto;
+	width: 80px;
+	height: 80px;
+	background-size: 100%;
+	background-repeat: no-repeat
+	background-position:center;
+}
+
+/*Adicionar o icones*/
+
+.wraper .icon1{
+    background-image: url('../imagens/icon1.png');
+}
+
+.wraper .icon2{
+    background-image: url('../imagens/icon2.png');
+}
+
+.wraper .icon3{
+    background-image: url('../imagens/icon3.png');
+}
+
+/*Título */
+
+.wraper h2{
+	padding: 20px 0;
+
+}
+
+/*Parágrafo */
+
+.wraper p{
+	text-align: justify;
+	padding-bottom: 90px;
+}
+
+
+@media screen and (max-width: 710px){
 
 	header{
 	
@@ -83,7 +214,7 @@ header .menu-mobile ul li:nth-of-type(1){
 
 	header .logo{
 		float: none;
-		margin: 20px auto 20px auto;
+		margin: 10px auto 20px auto;
 	}
 
 	header .menu-desktop{
@@ -96,15 +227,22 @@ header .menu-mobile ul li:nth-of-type(1){
 		
 	}
 
-}
+	.slider{
+		height: auto;
+		padding-top: 70%;
+	}
+	
+	.bullets-nav span{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background-color: #ccc;
+	cursor: pointer;
+	margin:0 5%;
+	} 
 
-@media screen and (max-width: 720px){
-
-
-	header .menu-desktop ul li {
-
-		font-size: 23px;
+	.wraper{
+        width: 100%;
+		
 	}
 }
-
-
