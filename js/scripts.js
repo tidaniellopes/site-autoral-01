@@ -1,5 +1,9 @@
 $(function(){
 
+    var tamanho = $('.galeria-wraper').width();
+
+    console.log(tamanho);
+
     //SLIDER
 
     //Variáveis
@@ -47,5 +51,7 @@ $(function(){
 		$('.slider img').eq(indiceAtual).stop().fadeIn(800); //Apareça a nova foto
 	}
 
+
+    
     
 })
