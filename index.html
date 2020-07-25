@@ -5,17 +5,18 @@
     <title>Titulo_Do_Projeto</title>
     
 	<meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/> <!--CSS-->
+    
     <!--Plugins-->
     <!--Js-socials-->
     <link rel="stylesheet" type="text/css" href="css/js-socials/font-awesome/fontawesome.css">
     <link rel="stylesheet" type="text/css" href="css/js-socials/jssocials.css"/>
     <link rel="stylesheet" type="text/css" href="css/js-socials/jssocials-theme-flat.css"/>
     <!--Fancy-box-->
-    <link rel="stylesheet" type="text/css" href="css/fancy-box/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!--         -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/> <!--CSS-->
 	<meta name="author" content="DanielLopes">
-	<meta name="keywords" content="palavras,chaves,por,
-	virgula">
+	<meta name="keywords" content="palavras,chaves,por,virgula">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,200&display=swap" rel="stylesheet">
@@ -66,7 +67,6 @@
         </div><!--bullets-nav-->
     </div><!--slider-->
 
-
     <section class="section-columns">
         <div class="container">
             <h2 class="title">Qualidade de vida e conforto</h2>
@@ -94,33 +94,71 @@
     </section><!--section-columns-->
 
     <section class="section-galeria">
-        <div class="container">
-            <div class="galeria-wraper">
-                <Img src="" >
-            </div><!--galeria-wraper-->
+        <div class="container"> 
+            <h2>Galeria</h2>
 
-            <div class="galeria-wraper">
-                <Img src="" >
-            </div><!--galeria-wraper-->
+            <div class="wraper-galeria" data-fancybox="gallery" href="imagens/galeria1.jpg">
+                <div class="imagem" style="background-image: url('imagens/galeria1.jpg');"></div>
+            </div>
 
-            <div class="galeria-wraper">
-                <Img src="" >
-            </div><!--galeria-wraper-->
+            <div class="wraper-galeria" data-fancybox="gallery" href="imagens/galeria2.jpg">
+                <div class="imagem" style="background-image: url('imagens/galeria2.jpg');"></div>
+            </div>
 
-            <div class="galeria-wraper">
-                <Img src="" >
-            </div><!--galeria-wraper-->
+            <div class="wraper-galeria" data-fancybox="gallery" href="imagens/galeria3.jpg">
+                <div class="imagem" style="background-image: url('imagens/galeria3.jpg');"></div>
+            </div>
 
-            <div class="galeria-wraper">
-                <Img src="" >
-            </div><!--galeria-wraper--> 
+            <div class="wraper-galeria" data-fancybox="gallery" href="imagens/galeria4.jpg">
+                <div class="imagem" style="background-image: url('imagens/galeria4.jpg');"></div>
+            </div>
 
+            <div class="wraper-galeria" data-fancybox="gallery" href="imagens/galeria5.jpg">
+                <div class="imagem" style="background-image: url('imagens/galeria5.jpg');"></div>
+            </div>
 
+            <div class="wraper-galeria" data-fancybox="gallery" href="imagens/galeria6.jpg">
+                <div class="imagem" style="background-image: url('imagens/galeria6.jpg');"></div>
+            </div>
+
+            <div class="wraper-galeria" data-fancybox="gallery" href="imagens/galeria7.jpg">
+                <div class="imagem" style="background-image: url('imagens/galeria7.jpg');"></div>
+            </div>
+
+            <div class="wraper-galeria" data-fancybox="gallery" href="imagens/galeria8.jpg">
+                <div class="imagem" style="background-image: url('imagens/galeria8.jpg');"></div>
+            </div>
+
+            <div class="clear"></div>
         </div><!--container-->
-    </section><!--section-galeria-->
+    </section>
+
+    <section class="section-form">
+        <div class="container">
+            <div class="info">
+                <div class="servicos">
+                    <h2>Nome</h2>
+                    <div class="perfil"></div><!--perfil-->
+                </div><!--servicos-->
+                <div class="conteudo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iure consequuntur odio nulla earum, vero quibusdam labore illo beatae iusto in. Molestiae magnam id veniam laboriosam cumque. Similique, repudiandae itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum incidunt iure saepe numquam veritatis veniam neque dolores quod labore debitis, quas tenetur illo autem enim libero qui a quo quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio accusantium dolorum consequuntur voluptate voluptates soluta, est quae, nemo inventore dignissimos voluptatum ipsum voluptatem. Aspernatur doloribus corrupti sed ea itaque.</p>
+                </div><!--conteudo-->
+            </div><!--info-->
+            <form>
+                <h2>Cadastre-se</h2>
+                <input class="w50" name="nome" type="text" placeholder="Nome*"/>
+                <input class="w50 name="sobrenome" type="text" placeholder="Sobrenome*"/>
+                <input name="email" type="email" placeholder="E-mail*"/>
+                <input name="telefone" type="telefone" placeholder="Telefone*"/>
+                <input name="nascimento" type="text" placeholder="Data de Nascimento*"/>
+                <input type="submit" placeholder="Envio*"/>
+            </form>
+        </div><!--container-->
+        <div class="clear"></div><!--clear-->
+    </section><!--form-->
 
     <!--Adicionando o JavaScript com biblioteca jquery-->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
     <!--plugins-->
     <!--js-socials-->
@@ -128,7 +166,7 @@
     <!--js-mask-->
     <script src="js/mask/jquery.mask.js"></script>
     <!--Fancy-box-->
-    <script src="js/fancy-box/jquery.fancybox.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     
 </body>
 
