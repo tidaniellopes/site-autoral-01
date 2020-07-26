@@ -29,29 +29,26 @@
             <div class="logo"> </div><!--logo-->
             <nav class="menu-desktop">
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Conteúdo</a></li>
-                    <li><a>Autor</a></li>
-                    <li><a>Contato</a></li>
+                    <li><a class="homeNav" href="">Home</a></li>
+                    <li><a class="servicosNav" href="#servicos">Serviços</a></li>
+                    <li><a class="galeriaNav" href="#galeria">Galeria</a></li>
+                    <li><a class="cadastroNav" href="#cadastro">Cadastro</a></li>
                 </ul>
             </nav><!--menu-desktop-->
 
             <nav class="menu-mobile">
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Conteúdo</a></li>
-                    <li><a>Autor</a></li>
-                    <li><a>Contato</a></li>
-
+                    <li><a href="">Home</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#cadastro">Cadastro</a></li>
                 </ul>
             </nav><!--menu-desktop-->
             <div class="clear"></div><!--clear-->
         </div><!--container-->
     </header>
 
-    <div class="teste"></div>
-
-    <div id="slider1" class="slider">
+    <section target="homeNav" id="slider1" class="slider">
         <img src="imagens/img1.jpg" />
         <img src="imagens/img2.jpg" />
         <img src="imagens/img3.jpg" />
@@ -66,9 +63,9 @@
             <span></span>
             <span></span>
         </div><!--bullets-nav-->
-    </div><!--slider-->
+    </section><!--slider-->
 
-    <section class="section-columns">
+    <section target="servicosNav" id="servicos" class="section-columns">
         <div class="container">
             <h2 class="title">Qualidade de vida e conforto</h2>
     
@@ -94,7 +91,7 @@
         <div class="clear"></div>
     </section><!--section-columns-->
 
-    <section class="section-galeria">
+    <section target="galeriaNav" id="galeria" class="section-galeria">
         <div class="container"> 
             <h2 class="title">Galeria</h2>
 
@@ -134,7 +131,7 @@
         </div><!--container-->
     </section>
 
-    <section class="section-form">
+    <section target="cadastroNav" id="cadastro" class="section-form">
         <div class="container">
             <div class="info">
                 <div class="servicos">
@@ -213,6 +210,12 @@
     <!--Adicionando o JavaScript com biblioteca jquery-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+
+
+
+    <!--Projetos-->
+    <script src="js/menuScroll.js"></script>
+
     <!--plugins-->
     <!--js-socials-->
     <script src="js/js-socials/jquery.jssocials.js"></script>

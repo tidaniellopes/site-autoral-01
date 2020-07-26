@@ -88,6 +88,15 @@ header .menu-mobile ul li:nth-of-type(1){
 	border-top: 1px solid rgba(0, 0, 0, 0.3); 
 }
 
+nav a{
+	color: black;
+	text-decoration: none;
+}
+
+nav li:first-child a{
+	border-bottom:2px solid #333;
+}
+
 /*SLIDER */
 
 .slider{
@@ -138,7 +147,7 @@ header .menu-mobile ul li:nth-of-type(1){
 	/***/
 
 	width: 100%; /*Terá largura máxima*/
-	z-index: 3; /*Vai sobrepor tudo*/
+	z-index: 2; /*Vai sobrepor tudo*/
 	text-align: center; /*Será Alinhado ao centro*/
 }
 
@@ -159,7 +168,6 @@ header .menu-mobile ul li:nth-of-type(1){
 .section-columns{
 	width: 100%; 
 	height: auto;
-	padding-bottom: 20px;
 	color: rgb(82, 94, 85);
 }
 
@@ -220,7 +228,7 @@ header .menu-mobile ul li:nth-of-type(1){
 .section-galeria{
 	width: 100%;
 	height: auto;
-	padding: 10px 2% 0 2%;
+	padding: 30px 2% 0 2%;
 	text-align: center;
 	color:rgb(82, 94, 85);
 	font-size: 20px;
@@ -257,7 +265,7 @@ header .menu-mobile ul li:nth-of-type(1){
 /*Section formulário*/
 
 .section-form{
-	padding: 80px 2%;
+	padding: 120px 2% 80px 2%;
 
 }
 

@@ -51,18 +51,14 @@ $(function(){
             $('.slider img').eq(indiceAtual).stop().fadeIn(800); //Apareça a nova foto
         }
     
-    
-
         //section perfil e formulário
-
 
         var indicePerfil = 0;
         
-
         //Cria um índice, a cada indice ele coloca uma cor e um texto nessa sessão.
         
 
 
+
         
-    
 })
