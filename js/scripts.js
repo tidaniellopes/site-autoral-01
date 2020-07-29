@@ -1,8 +1,6 @@
 $(function(){
 
-    var tamanho = $('.galeria-wraper').width();
 
-    console.log(tamanho);
 
     //SLIDER
 
